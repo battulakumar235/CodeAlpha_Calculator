@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <title>Nova Calculator | CodeAlpha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Nova Calculator home"><span class="brand-mark">N</span> nova<span class="muted">/calc</span></a>
+      <span class="status"><i></i> READY</span>
+    </header>
+    <section class="calculator" aria-label="Calculator">
+      <div class="calc-heading"><div><p class="eyebrow">PRECISION TOOL</p><h1>Calculator</h1></div><button class="icon-btn" id="themeBtn" aria-label="Toggle accent theme" title="Toggle accent">◐</button></div>
+      <div class="display" aria-live="polite">
+        <div id="history" class="history">Ready for your calculation</div>
+        <input id="display" class="display-value" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" value="0" aria-label="Calculator display">
+      </div>
+      <div class="keypad" id="keypad">
+        <button class="key utility" data-action="clear">AC</button><button class="key utility" data-action="delete" aria-label="Delete last character">DEL</button><button class="key utility" data-value="%">%</button><button class="key operator" data-value="/">÷</button>
+        <button class="key" data-value="7">7</button><button class="key" data-value="8">8</button><button class="key" data-value="9">9</button><button class="key operator" data-value="*">×</button>
+        <button class="key" data-value="4">4</button><button class="key" data-value="5">5</button><button class="key" data-value="6">6</button><button class="key operator" data-value="-">−</button>
+        <button class="key" data-value="1">1</button><button class="key" data-value="2">2</button><button class="key" data-value="3">3</button><button class="key operator" data-value="+">+</button>
+        <button class="key utility" data-action="sign">±</button><button class="key" data-value="0">0</button><button class="key" data-value=".">.</button><button class="key equals" data-action="equals">=</button>
+      </div>
+      <p id="message" class="message" role="status">Tip: use your keyboard, too.</p>
+    </section>
+    <footer>Built with HTML, CSS & JavaScript <span>•</span> CodeAlpha Frontend Task</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
